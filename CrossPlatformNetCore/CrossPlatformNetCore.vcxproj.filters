@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="xNet">
+      <UniqueIdentifier>{34d39a8c-dd41-48ad-8f6b-cc4964d97779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool">
+      <UniqueIdentifier>{d8bafd3a-a16d-47b1-bbd5-483fdeb6f609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\zlib">
+      <UniqueIdentifier>{84514d32-f101-4b01-befd-c49112e2cfe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\des">
+      <UniqueIdentifier>{cef003e8-083b-4684-b15f-ef6eaaeabab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xServer">
+      <UniqueIdentifier>{f5b796ba-23eb-48bb-89b8-5df4d8b0c9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\database">
+      <UniqueIdentifier>{a31357b0-06c4-415e-8178-ea6866106c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\libxml">
+      <UniqueIdentifier>{bc54f740-4f72-4d18-95f1-962a21634b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xCmd">
+      <UniqueIdentifier>{35da2daf-3e4d-43f3-b228-8b06d4c061f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{b4abe500-7e16-4c23-9c0c-983ccc860328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\libxml\libxml2-2.7.3.win32">
+      <UniqueIdentifier>{90348a83-8a5b-4b52-8826-d706f6b9670a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\libxml\iconv-1.9.2.win32">
+      <UniqueIdentifier>{5e710654-d602-4cff-b40e-eada21494b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\libxml\libxml2-2.7.3.win32\inc">
+      <UniqueIdentifier>{6c6fb9f2-827e-491b-98c4-6d3a7926769d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xTool\libxml\iconv-1.9.2.win32\inc">
+      <UniqueIdentifier>{42d0d368-db17-46a5-be23-c52b55619931}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xTool\xDefine.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xLog.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xStringTool.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xThread.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xTime.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xTools.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\crc32.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\deflate.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\gzguts.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\inffast.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\inffixed.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\inflate.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\inftrees.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\trees.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\zconf.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\zlib.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\zlib\zutil.h">
+      <Filter>xTool\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\des\d3des.h">
+      <Filter>xTool\des</Filter>
+    </ClInclude>
+    <ClInclude Include="xNet\xByteBuffer.h">
+      <Filter>xNet</Filter>
+    </ClInclude>
+    <ClInclude Include="xNet\xNetDefine.h">
+      <Filter>xNet</Filter>
+    </ClInclude>
+    <ClInclude Include="xNet\xNetProcessor.h">
+      <Filter>xNet</Filter>
+    </ClInclude>
+    <ClInclude Include="xNet\xSocket.h">
+      <Filter>xNet</Filter>
+    </ClInclude>
+    <ClInclude Include="xServer\xClient.h">
+      <Filter>xServer</Filter>
+    </ClInclude>
+    <ClInclude Include="xServer\xServer.h">
+      <Filter>xServer</Filter>
+    </ClInclude>
+    <ClInclude Include="xServer\xSignal.h">
+      <Filter>xServer</Filter>
+    </ClInclude>
+    <ClInclude Include="xServer\xState.h">
+      <Filter>xServer</Filter>
+    </ClInclude>
+    <ClInclude Include="xServer\xStateMachine.h">
+      <Filter>xServer</Filter>
+    </ClInclude>
+    <ClInclude Include="xServer\xTask.h">
+      <Filter>xServer</Filter>
+    </ClInclude>
+    <ClInclude Include="xServer\ZoneServer.h">
+      <Filter>xServer</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xExecutionTime.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xFunctionTime.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xUniqueIDManager.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\xXMLParser.h">
+      <Filter>xTool</Filter>
+    </ClInclude>
+    <ClInclude Include="xCmd\SystemCmd.h">
+      <Filter>xCmd</Filter>
+    </ClInclude>
+    <ClInclude Include="xCmd\xCommand.h">
+      <Filter>xCmd</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\database\xDBConnPool.h">
+      <Filter>xTool\database</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\database\xDBMeta.h">
+      <Filter>xTool\database</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\c14n.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\catalog.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\chvalid.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\debugXML.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\dict.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\DOCBparser.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\encoding.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\entities.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\globals.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\hash.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\HTMLparser.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\HTMLtree.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\list.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\nanoftp.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\nanohttp.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\parser.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\parserInternals.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\pattern.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\relaxng.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\SAX.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\SAX2.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\schemasInternals.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\schematron.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\threads.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\tree.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\uri.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\valid.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xinclude.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xlink.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlautomata.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlerror.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlexports.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlIO.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlmemory.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlmodule.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlreader.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlregexp.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlsave.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlschemas.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlschemastypes.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlstring.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlunicode.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlversion.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlwin32version.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlwriter.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xpath.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xpathInternals.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xpointer.h">
+      <Filter>xTool\libxml\libxml2-2.7.3.win32\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="xTool\libxml\iconv-1.9.2.win32\include\iconv.h">
+      <Filter>xTool\libxml\iconv-1.9.2.win32\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xTool\xLog.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\xStringTool.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\xThread.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\xTime.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\xTools.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\adler32.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\compress.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\crc32.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\deflate.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\gzclose.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\gzlib.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\gzread.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\gzwrite.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\infback.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\inffast.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\inflate.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\inftrees.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\trees.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\uncompr.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\zlib\zutil.c">
+      <Filter>xTool\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\des\d3des.c">
+      <Filter>xTool\des</Filter>
+    </ClCompile>
+    <ClCompile Include="xNet\xByteBuffer.cpp">
+      <Filter>xNet</Filter>
+    </ClCompile>
+    <ClCompile Include="xNet\xNetProcessor.cpp">
+      <Filter>xNet</Filter>
+    </ClCompile>
+    <ClCompile Include="xNet\xSocket.cpp">
+      <Filter>xNet</Filter>
+    </ClCompile>
+    <ClCompile Include="xServer\xClient.cpp">
+      <Filter>xServer</Filter>
+    </ClCompile>
+    <ClCompile Include="xServer\xServer.cpp">
+      <Filter>xServer</Filter>
+    </ClCompile>
+    <ClCompile Include="xServer\xTask.cpp">
+      <Filter>xServer</Filter>
+    </ClCompile>
+    <ClCompile Include="xServer\ZoneServer.cpp">
+      <Filter>xServer</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\xExecutionTime.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\xFunctionTime.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\xXMLParser.cpp">
+      <Filter>xTool</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="xTool\database\xDBConnPool.cpp">
+      <Filter>xTool\database</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

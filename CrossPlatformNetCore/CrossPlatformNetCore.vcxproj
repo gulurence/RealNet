@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17D7F9AE-C34A-4731-914A-A121DFA7BF67}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CrossPlatformNetCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\xCmd;.\xNet;.\xServer;.\xTool;.\xTool\pthreads.2;.\xTool\libxml\libxml2-2.7.3.win32\include;.\xTool\libxml\iconv-1.9.2.win32\include;.\xTool\database;C:\mySQL5.5;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\mySQL5.5;.\xTool\libxml\iconv-1.9.2.win32\lib;.\xTool\pthreads.2;.\xTool\libxml\libxml2-2.7.3.win32\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>.\_bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_TIMESPEC_DEFINED;_WINDOWS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\xTool\mySQL5.5\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmySQL.lib;iconv.lib;pthreadVC2.lib;libxml2.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\xTool\mySQL5.5\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="xCmd\SystemCmd.h" />
+    <ClInclude Include="xCmd\xCommand.h" />
+    <ClInclude Include="xNet\xByteBuffer.h" />
+    <ClInclude Include="xNet\xNetDefine.h" />
+    <ClInclude Include="xNet\xNetProcessor.h" />
+    <ClInclude Include="xNet\xSocket.h" />
+    <ClInclude Include="xServer\xClient.h" />
+    <ClInclude Include="xServer\xServer.h" />
+    <ClInclude Include="xServer\xSignal.h" />
+    <ClInclude Include="xServer\xState.h" />
+    <ClInclude Include="xServer\xStateMachine.h" />
+    <ClInclude Include="xServer\xTask.h" />
+    <ClInclude Include="xServer\ZoneServer.h" />
+    <ClInclude Include="xTool\database\xDBConnPool.h" />
+    <ClInclude Include="xTool\database\xDBMeta.h" />
+    <ClInclude Include="xTool\des\d3des.h" />
+    <ClInclude Include="xTool\libxml\iconv-1.9.2.win32\include\iconv.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\c14n.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\catalog.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\chvalid.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\debugXML.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\dict.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\DOCBparser.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\encoding.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\entities.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\globals.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\hash.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\HTMLparser.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\HTMLtree.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\list.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\nanoftp.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\nanohttp.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\parser.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\parserInternals.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\pattern.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\relaxng.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\SAX.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\SAX2.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\schemasInternals.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\schematron.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\threads.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\tree.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\uri.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\valid.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xinclude.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xlink.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlautomata.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlerror.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlexports.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlIO.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlmemory.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlmodule.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlreader.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlregexp.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlsave.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlschemas.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlschemastypes.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlstring.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlunicode.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlversion.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlwin32version.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xmlwriter.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xpath.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xpathInternals.h" />
+    <ClInclude Include="xTool\libxml\libxml2-2.7.3.win32\include\libxml\xpointer.h" />
+    <ClInclude Include="xTool\xDefine.h" />
+    <ClInclude Include="xTool\xExecutionTime.h" />
+    <ClInclude Include="xTool\xFunctionTime.h" />
+    <ClInclude Include="xTool\xLog.h" />
+    <ClInclude Include="xTool\xStringTool.h" />
+    <ClInclude Include="xTool\xThread.h" />
+    <ClInclude Include="xTool\xTime.h" />
+    <ClInclude Include="xTool\xTools.h" />
+    <ClInclude Include="xTool\xUniqueIDManager.h" />
+    <ClInclude Include="xTool\xXMLParser.h" />
+    <ClInclude Include="xTool\zlib\crc32.h" />
+    <ClInclude Include="xTool\zlib\deflate.h" />
+    <ClInclude Include="xTool\zlib\gzguts.h" />
+    <ClInclude Include="xTool\zlib\inffast.h" />
+    <ClInclude Include="xTool\zlib\inffixed.h" />
+    <ClInclude Include="xTool\zlib\inflate.h" />
+    <ClInclude Include="xTool\zlib\inftrees.h" />
+    <ClInclude Include="xTool\zlib\trees.h" />
+    <ClInclude Include="xTool\zlib\zconf.h" />
+    <ClInclude Include="xTool\zlib\zlib.h" />
+    <ClInclude Include="xTool\zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test\test.cpp" />
+    <ClCompile Include="xNet\xByteBuffer.cpp" />
+    <ClCompile Include="xNet\xNetProcessor.cpp" />
+    <ClCompile Include="xNet\xSocket.cpp" />
+    <ClCompile Include="xServer\xClient.cpp" />
+    <ClCompile Include="xServer\xServer.cpp" />
+    <ClCompile Include="xServer\xTask.cpp" />
+    <ClCompile Include="xServer\ZoneServer.cpp" />
+    <ClCompile Include="xTool\database\xDBConnPool.cpp" />
+    <ClCompile Include="xTool\des\d3des.c" />
+    <ClCompile Include="xTool\xExecutionTime.cpp" />
+    <ClCompile Include="xTool\xFunctionTime.cpp" />
+    <ClCompile Include="xTool\xLog.cpp" />
+    <ClCompile Include="xTool\xStringTool.cpp" />
+    <ClCompile Include="xTool\xThread.cpp" />
+    <ClCompile Include="xTool\xTime.cpp" />
+    <ClCompile Include="xTool\xTools.cpp" />
+    <ClCompile Include="xTool\xXMLParser.cpp" />
+    <ClCompile Include="xTool\zlib\adler32.c" />
+    <ClCompile Include="xTool\zlib\compress.c" />
+    <ClCompile Include="xTool\zlib\crc32.c" />
+    <ClCompile Include="xTool\zlib\deflate.c" />
+    <ClCompile Include="xTool\zlib\gzclose.c" />
+    <ClCompile Include="xTool\zlib\gzlib.c" />
+    <ClCompile Include="xTool\zlib\gzread.c" />
+    <ClCompile Include="xTool\zlib\gzwrite.c" />
+    <ClCompile Include="xTool\zlib\infback.c" />
+    <ClCompile Include="xTool\zlib\inffast.c" />
+    <ClCompile Include="xTool\zlib\inflate.c" />
+    <ClCompile Include="xTool\zlib\inftrees.c" />
+    <ClCompile Include="xTool\zlib\trees.c" />
+    <ClCompile Include="xTool\zlib\uncompr.c" />
+    <ClCompile Include="xTool\zlib\zutil.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
